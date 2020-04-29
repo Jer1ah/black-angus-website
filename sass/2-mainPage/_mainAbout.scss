@@ -1,0 +1,33 @@
+.mainAbout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+        margin: 17.5rem 0 1rem;
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 5rem;
+        width: 60rem;
+        text-align: center;
+        margin: 0;
+    }
+
+    p {
+        width: 60rem;
+        text-align: center;
+        line-height: 3rem;
+        font-size: 1.6rem;
+        color: #333;
+    }
+
+    h5 {
+        margin: 2rem 0 17rem;
+        font-size: 3.3rem;
+        font-family: 'Yellowtail', cursive;
+        font-weight: lighter;
+    }
+}

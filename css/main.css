@@ -31,9 +31,11 @@ html, body {
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 600;
+  padding-bottom: 0.2rem;
 }
 .navigation__listItem .active {
   color: #fff;
+  border-bottom: 0.1rem solid #fff;
 }
 
 .header {
@@ -50,6 +52,74 @@ html, body {
 .header__heading p {
   color: #fff;
   font-size: 2rem;
+}
+
+.mainAbout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainAbout h3 {
+  margin: 17.5rem 0 1rem;
+  font-size: 2rem;
+}
+.mainAbout h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 5rem;
+  width: 60rem;
+  text-align: center;
+  margin: 0;
+}
+.mainAbout p {
+  width: 60rem;
+  text-align: center;
+  line-height: 3rem;
+  font-size: 1.6rem;
+  color: #333;
+}
+.mainAbout h5 {
+  margin: 2rem 0 17rem;
+  font-size: 3.3rem;
+  font-family: "Yellowtail", cursive;
+  font-weight: lighter;
+}
+
+.mainMenu__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  height: 33rem;
+}
+.mainMenu__listItem {
+  background: url("https://jumixthemes.com/v4/ceder/wp-content/uploads/sites/5/2019/08/1-1280x720-1300x731.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  flex: 1;
+}
+.mainMenu .two {
+  background: url("https://jumixthemes.com/v4/ceder/wp-content/uploads/sites/5/2019/08/2-1280x720-1300x731.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.mainMenu .three {
+  background: url("https://jumixthemes.com/v4/ceder/wp-content/uploads/sites/5/2019/08/3-1280x720-1300x731.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.mainMenu__reservations {
+  background-color: #353234;
+  padding: 0;
+  margin: 0;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainMenu__reservations h3 {
+  color: #ccad8f;
+  font-size: 2.2rem;
 }
 
 /*# sourceMappingURL=main.css.map */
