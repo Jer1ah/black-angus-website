@@ -1,0 +1,17 @@
+.header {
+    padding: .1rem;
+    height: 100vh;
+    background: url("../img/header-image.png");
+    background-size: cover;
+    background-position: center;  
+
+    &__heading {
+        text-align: center;
+        margin: 24rem auto 0;
+
+        p {
+            color: #fff;
+            font-size: 2rem;
+        } 
+    }
+}

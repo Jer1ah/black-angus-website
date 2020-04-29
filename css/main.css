@@ -1,0 +1,55 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  position: relative;
+  font-family: "Manrope", sans-serif;
+}
+
+.navigation {
+  height: 7.7rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+.navigation__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigation__listItem {
+  margin: 0 1.88rem;
+}
+.navigation__listItem a {
+  color: #bbb;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.navigation__listItem .active {
+  color: #fff;
+}
+
+.header {
+  padding: 0.1rem;
+  height: 100vh;
+  background: url("../img/header-image.png");
+  background-size: cover;
+  background-position: center;
+}
+.header__heading {
+  text-align: center;
+  margin: 24rem auto 0;
+}
+.header__heading p {
+  color: #fff;
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=main.css.map */

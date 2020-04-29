@@ -1,0 +1,32 @@
+.navigation {
+    height: 7.7rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__listItem {
+        margin: 0 1.88rem;
+
+        a {
+            color: #bbb;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .active {
+            color: #fff;
+        }
+    }
+}
