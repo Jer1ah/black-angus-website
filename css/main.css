@@ -374,4 +374,21 @@ html, body {
   margin: 0;
 }
 
+.menusHeader {
+  height: 45rem;
+}
+.menusHeader h1 {
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  font-size: 7.7rem;
+  margin: 0;
+}
+.menusHeader p {
+  font-size: 1.7rem;
+  font-family: "Playfair Display", serif;
+}
+.menusHeader .header__heading {
+  margin-top: 16rem;
+}
+
 /*# sourceMappingURL=main.css.map */
