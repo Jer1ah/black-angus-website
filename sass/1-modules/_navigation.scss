@@ -3,6 +3,8 @@
     width: 100%;
     position: fixed;
     top: 0;
+    left: 0;
+    background-color: #2c292b;
 
     &__list {
         list-style: none;
@@ -28,7 +30,6 @@
 
         .active {
             color: #fff;
-            border-bottom: .1rem solid #fff;
         }
     }
 }

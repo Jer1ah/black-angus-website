@@ -12,6 +12,8 @@ html, body {
   width: 100%;
   position: fixed;
   top: 0;
+  left: 0;
+  background-color: #2c292b;
 }
 .navigation__list {
   list-style: none;
@@ -35,7 +37,6 @@ html, body {
 }
 .navigation__listItem .active {
   color: #fff;
-  border-bottom: 0.1rem solid #fff;
 }
 
 .header {
@@ -47,7 +48,7 @@ html, body {
 }
 .header__heading {
   text-align: center;
-  margin: 24rem auto 0;
+  margin: 26rem auto 0;
 }
 .header__heading p {
   color: #fff;
@@ -132,16 +133,19 @@ html, body {
   cursor: pointer;
 }
 .mainMenu__listItem:hover .container {
-  border: 0.1rem solid #fff;
+  animation-name: animateBorder;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
 }
 .mainMenu__listItem:hover .container h3 {
   animation-name: fadeDown;
-  animation-duration: 0.33s;
+  animation-duration: 0.4s;
   animation-fill-mode: forwards;
 }
 .mainMenu__listItem:hover .container h5 {
   animation-name: fadeUp;
-  animation-duration: 0.33s;
+  animation-duration: 0.4s;
   opacity: 1;
 }
 .mainMenu .two {
@@ -185,6 +189,100 @@ html, body {
   100% {
     transform: translateY(2rem);
   }
+}
+@keyframes animateBorder {
+  0% {
+    border: 0.1rem solid transparent;
+  }
+  100% {
+    border: 0.1rem solid #fff;
+  }
+}
+.mainInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainInfo__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 110rem;
+  margin: 15rem 0 5rem;
+}
+.mainInfo .hours {
+  text-align: center;
+}
+.mainInfo .hours h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+.mainInfo .hours h5 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 2.2rem 0 0;
+}
+.mainInfo .hours p {
+  margin: 0.7rem 0 0;
+  font-size: 1.4rem;
+}
+.mainInfo .questions {
+  text-align: center;
+}
+.mainInfo .questions h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+.mainInfo .questions h5 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 2.2rem 0 0;
+}
+.mainInfo .questions p {
+  margin: 0.7rem 0 0;
+  font-size: 1.4rem;
+}
+.mainInfo .questions img {
+  margin-top: 0.7rem;
+}
+.mainInfo .dailyMenu {
+  text-align: center;
+}
+.mainInfo .dailyMenu h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+.mainInfo .dailyMenu__list {
+  list-style: none;
+  padding: 0.5rem 1rem;
+  border: 0.2rem solid #E5E5E5;
+  width: 25rem;
+}
+.mainInfo .dailyMenu__listItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.88rem 0;
+}
+.mainInfo .dailyMenu__listItem h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+.mainInfo .dailyMenu__listItem h5:last-child {
+  font-size: 2rem;
+}
+.mainInfo a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 0 10rem;
+  color: #fff;
+  background-color: #353234;
+  padding: 2.2rem 4rem;
+  border-radius: 5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
 }
 
 /*# sourceMappingURL=main.css.map */
