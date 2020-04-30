@@ -4,7 +4,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #2c292b;
+    transition: all .3s;
 
     &__list {
         list-style: none;

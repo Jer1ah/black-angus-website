@@ -1,0 +1,56 @@
+.mainSocial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #353234;
+
+    h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 4.5rem;
+        margin: 15rem 0 0;
+        color: #fff;
+    }
+
+    p {
+        font-size: 1.5rem;
+        width: 40rem;
+        text-align: center;
+        line-height: 3rem;
+        color: #EDEDED;
+    }
+
+    &__list {
+        padding: 0;
+        width: 90rem;
+        margin: 8.8rem 0 15rem;
+        list-style: none;
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+    }
+
+    &__listItem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        width: 15rem;
+
+        img {
+            width: 5rem;
+        }
+
+        h3 {
+            color: #fff;
+            font-size: 1.88rem;
+            margin: 1.5rem 0 .5rem;
+        }
+
+        h5 {
+            color: #EDEDED;
+            font-size: 1.1rem;
+            font-weight: 400;
+            margin: 0;
+        }
+    }
+}
