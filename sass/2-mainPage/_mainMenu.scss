@@ -4,25 +4,82 @@
         padding: 0;
         margin: 0;
         display: flex;
-        height: 33rem;
+        height: 30rem;
     }
 
     &__listItem {
-        background: url("https://jumixthemes.com/v4/ceder/wp-content/uploads/sites/5/2019/08/1-1280x720-1300x731.jpg");
+        background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+        url("https://jumixthemes.com/v4/ceder/wp-content/uploads/sites/5/2019/08/1-1280x720-1300x731.jpg");
         background-size: cover;
         background-position: center;
         height: 100%;
         flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 1s;
+
+        .menuLink {
+            display: inline-block;
+            width: 90%;
+            height: 85%;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: all .3s;
+
+            h3 {
+                color: #fff;
+                margin: 11rem 0 0;
+                font-size: 2.2rem;
+                font-weight: 800;
+            }
+
+            h5 {
+                color: #fff;
+                margin: 2.5rem 0 0;
+                font-size: 1.3rem;
+                opacity: 0;
+            }
+        }
+    }
+
+    &__listItem:hover {
+        cursor: pointer;
+
+        .container {
+            border: .1rem solid #fff;
+
+            h3 {
+                animation-name: fadeDown;
+                animation-duration: .33s; 
+                animation-fill-mode: forwards;
+            }
+
+            h5 {
+                animation-name: fadeUp;
+                animation-duration: .33s;
+                opacity: 1;
+            }
+        }
     }
 
     .two {
-        background: url("https://jumixthemes.com/v4/ceder/wp-content/uploads/sites/5/2019/08/2-1280x720-1300x731.jpg");
+        background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+        url("https://jumixthemes.com/v4/ceder/wp-content/uploads/sites/5/2019/08/2-1280x720-1300x731.jpg");
         background-size: cover;
         background-position: center;
     }
 
     .three {
-        background: url("https://jumixthemes.com/v4/ceder/wp-content/uploads/sites/5/2019/08/3-1280x720-1300x731.jpg");
+        background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+        url("https://jumixthemes.com/v4/ceder/wp-content/uploads/sites/5/2019/08/3-1280x720-1300x731.jpg");
         background-size: cover;
         background-position: center;
     }
@@ -40,5 +97,27 @@
             color: #ccad8f;
             font-size: 2.2rem;
         }
+    }
+}
+
+@keyframes fadeUp {
+    0% {
+        transform: translateY(2rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(2rem);
     }
 }

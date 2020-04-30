@@ -89,22 +89,68 @@ html, body {
   padding: 0;
   margin: 0;
   display: flex;
-  height: 33rem;
+  height: 30rem;
 }
 .mainMenu__listItem {
-  background: url("https://jumixthemes.com/v4/ceder/wp-content/uploads/sites/5/2019/08/1-1280x720-1300x731.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://jumixthemes.com/v4/ceder/wp-content/uploads/sites/5/2019/08/1-1280x720-1300x731.jpg");
   background-size: cover;
   background-position: center;
   height: 100%;
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+.mainMenu__listItem .menuLink {
+  display: inline-block;
+  width: 90%;
+  height: 85%;
+  text-decoration: none;
+}
+.mainMenu__listItem .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s;
+}
+.mainMenu__listItem .container h3 {
+  color: #fff;
+  margin: 11rem 0 0;
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+.mainMenu__listItem .container h5 {
+  color: #fff;
+  margin: 2.5rem 0 0;
+  font-size: 1.3rem;
+  opacity: 0;
+}
+.mainMenu__listItem:hover {
+  cursor: pointer;
+}
+.mainMenu__listItem:hover .container {
+  border: 0.1rem solid #fff;
+}
+.mainMenu__listItem:hover .container h3 {
+  animation-name: fadeDown;
+  animation-duration: 0.33s;
+  animation-fill-mode: forwards;
+}
+.mainMenu__listItem:hover .container h5 {
+  animation-name: fadeUp;
+  animation-duration: 0.33s;
+  opacity: 1;
 }
 .mainMenu .two {
-  background: url("https://jumixthemes.com/v4/ceder/wp-content/uploads/sites/5/2019/08/2-1280x720-1300x731.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://jumixthemes.com/v4/ceder/wp-content/uploads/sites/5/2019/08/2-1280x720-1300x731.jpg");
   background-size: cover;
   background-position: center;
 }
 .mainMenu .three {
-  background: url("https://jumixthemes.com/v4/ceder/wp-content/uploads/sites/5/2019/08/3-1280x720-1300x731.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://jumixthemes.com/v4/ceder/wp-content/uploads/sites/5/2019/08/3-1280x720-1300x731.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -120,6 +166,25 @@ html, body {
 .mainMenu__reservations h3 {
   color: #ccad8f;
   font-size: 2.2rem;
+}
+
+@keyframes fadeUp {
+  0% {
+    transform: translateY(2rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fadeDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(2rem);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
