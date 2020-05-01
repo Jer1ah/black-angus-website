@@ -1,0 +1,63 @@
+.blogList {
+    width: 110rem;
+    margin: 10rem auto 3rem;
+}
+
+.blog {
+    width: 100%;
+    margin-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    &__heading {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        img {
+            width: 90%;
+        }
+
+        span {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h2 {
+            font-size: 6.6rem;
+            margin: 0;
+            line-height: 5.5rem;
+        }
+
+        h5 {
+            font-size: 1.5rem;
+            margin: 1rem 0 0;
+        }
+    }
+
+    &__info {
+        width: 90%;
+
+        h1 {
+            font-size: 2.7rem;
+            margin: 2.5rem 0 1rem;
+        }
+
+        p {
+            margin: 0;
+            font-size: 1.4rem;
+            line-height: 2.9rem;
+            color: #333;
+        }
+
+        a {
+            display: inline-block;
+            color: #222;
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-top: 2rem;
+        }
+    }
+}
