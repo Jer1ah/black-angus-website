@@ -1,0 +1,32 @@
+.reservationsInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h5 {
+        margin: 15rem 0 .7rem;
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 4.5rem;
+        text-align: center;
+        margin: 0;
+    }
+
+    p {
+        width: 55rem;
+        text-align: center;
+        line-height: 3rem;
+        font-size: 1.6rem;
+        color: #333;
+    }
+
+    h3 {
+        margin: 2rem 0 13rem;
+        font-size: 3.3rem;
+        font-family: 'Yellowtail', cursive;
+        font-weight: lighter;
+    }
+}

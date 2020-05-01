@@ -422,7 +422,7 @@ html, body {
 
 .menuContainer {
   width: 110rem;
-  margin: 0 auto 10rem;
+  margin: 0 auto 15rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -431,7 +431,7 @@ html, body {
 .menu__list {
   padding: 2rem 3rem;
   list-style: none;
-  width: 40rem;
+  width: 44rem;
   border: #333 double 0.7rem;
   margin: 0;
 }
@@ -442,6 +442,7 @@ html, body {
   font-size: 2rem;
   padding: 0.5rem 1rem;
   margin: 0.5rem 0 1rem;
+  font-family: "Playfair Display", serif;
 }
 .menu__listItem {
   display: flex;
@@ -449,29 +450,134 @@ html, body {
   justify-content: space-between;
 }
 .menu__listItem h4 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin: 0;
+  font-family: "Playfair Display", serif;
 }
 .menu__listItem h5 {
-  font-size: 1.7rem;
+  font-size: 1.71rem;
+  font-weight: 500;
+  font-family: "Playfair Display", serif;
 }
 .menu__listItem p {
   color: gray;
   font-size: 1.2rem;
+  font-family: "Playfair Display", serif;
 }
 .menu__images {
   width: 55rem;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .menu__image {
-  width: 48%;
+  width: 49.5%;
   height: 25rem;
-  margin: 0.3rem;
+  margin-bottom: 0.6rem;
 }
 .menu__image img {
   width: 100%;
   height: 100%;
+}
+
+.reservationsHeader {
+  height: 45rem;
+}
+.reservationsHeader h1 {
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  font-size: 7.7rem;
+  margin: 0;
+}
+.reservationsHeader p {
+  font-size: 1.7rem;
+  font-family: "Playfair Display", serif;
+}
+.reservationsHeader .header__heading {
+  margin-top: 16rem;
+}
+
+.reservationsInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reservationsInfo h5 {
+  margin: 15rem 0 0.7rem;
+  font-size: 2rem;
+}
+.reservationsInfo h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 4.5rem;
+  text-align: center;
+  margin: 0;
+}
+.reservationsInfo p {
+  width: 55rem;
+  text-align: center;
+  line-height: 3rem;
+  font-size: 1.6rem;
+  color: #333;
+}
+.reservationsInfo h3 {
+  margin: 2rem 0 13rem;
+  font-size: 3.3rem;
+  font-family: "Yellowtail", cursive;
+  font-weight: lighter;
+}
+
+.reservations__images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reservations__images h3 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+.reservations__imagesList {
+  width: 110rem;
+  margin: 0 0 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+.reservations__imagesListItem {
+  width: 33%;
+  height: 33rem;
+  margin-bottom: 0.5rem;
+}
+.reservations__imagesListItem img {
+  width: 100%;
+  height: 100%;
+}
+
+.reservationsRooms {
+  width: 110rem;
+  margin: 0 auto 10rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.reservationsRoom {
+  width: 47%;
+}
+.reservationsRoom h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+.reservationsRoom h3 {
+  margin: 0.2rem 0 1rem;
+  font-size: 1.7rem;
+  color: #ccad8f;
+}
+.reservationsRoom p {
+  font-size: 1.33rem;
+  color: #222;
+  line-height: 3rem;
 }
 
 /*# sourceMappingURL=main.css.map */
