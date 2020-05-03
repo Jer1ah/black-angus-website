@@ -1,5 +1,6 @@
 .menuContainer {
     width: 110rem;
+    max-width: 90%; 
     margin: 0 auto 15rem;
     display: flex;
     justify-content: space-between;
@@ -10,7 +11,7 @@
     &__list {
         padding: 2rem 3rem;
         list-style: none;
-        width: 44rem;
+        flex: 3;
         border: #333 double .7rem;
         margin: 0;
 
@@ -50,10 +51,11 @@
     }
 
     &__images {
-        width: 55rem;
+        flex: 4;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        margin-left: 2.2rem;
     }
 
     &__image {
@@ -64,6 +66,34 @@
         img {
             width: 100%;
             height: 100%;
+        }
+    }
+}
+
+.appetizers .menu__images {
+    margin-left: 0;
+    margin-right: 2.2rem;
+} 
+
+//media queries 
+@media(max-width: 925px) {
+    .menuContainer {
+        flex-direction: column;
+        width: 60rem;
+        max-width: 90%;
+        align-items: center;
+        margin: 7rem auto;
+    }
+
+    .menu {
+        &__images {
+            display: none;
+        }
+
+        &__list {
+            width: 100%;
+            max-width: 90%;
+            margin: 0;
         }
     }
 }
