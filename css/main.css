@@ -542,11 +542,22 @@ html, body {
 .reservationsHeader p {
   font-size: 1.7rem;
   font-family: "Playfair Display", serif;
+  max-width: 90%;
+  margin: 1rem auto 0;
 }
 .reservationsHeader .header__heading {
   margin-top: 16rem;
 }
 
+@media (max-width: 795px) {
+  .reservationsHeader h1 {
+    font-size: 5rem;
+  }
+
+  .reservationsHeader p {
+    font-size: 1.5rem;
+  }
+}
 .reservationsInfo {
   display: flex;
   flex-direction: column;
@@ -702,6 +713,16 @@ html, body {
   margin-top: 16rem;
 }
 
+@media (max-width: 795px) {
+  .newsHeader h1 {
+    font-size: 5rem;
+  }
+
+  .newsHeader p {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+  }
+}
 .locationsHeader {
   height: 45rem;
 }
@@ -719,6 +740,15 @@ html, body {
   margin-top: 16rem;
 }
 
+@media (max-width: 795px) {
+  .locationsHeader h1 {
+    font-size: 5rem;
+  }
+
+  .locationsHeader .header__heading {
+    margin-top: 20rem;
+  }
+}
 .locations__list {
   width: 110rem;
   margin: 0 auto 20rem;

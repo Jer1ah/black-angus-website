@@ -11,9 +11,22 @@
     p {
         font-size: 1.7rem;
         font-family: 'Playfair Display', serif;
+        max-width: 90%;
+        margin: 1rem auto 0;
     }
 
     .header__heading {
         margin-top: 16rem;
+    }
+}
+
+//media queries
+@media(max-width: 795px) {
+    .reservationsHeader h1 {
+        font-size: 5rem;
+    }
+
+    .reservationsHeader p {
+        font-size: 1.5rem;
     }
 }

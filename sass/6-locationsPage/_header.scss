@@ -17,3 +17,14 @@
         margin-top: 16rem;
     }
 }
+
+//media queries
+@media(max-width: 795px) {
+    .locationsHeader h1 {
+        font-size: 5rem;
+    }
+
+    .locationsHeader .header__heading {
+        margin-top: 20rem;
+    }
+}
