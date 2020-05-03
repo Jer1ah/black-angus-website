@@ -103,6 +103,8 @@
     }
 }
 
+//keyframes
+
 @keyframes fadeUp {
     0% {
         transform: translateY(2rem);
@@ -132,5 +134,35 @@
 
     100% {
         border: .1rem solid #fff;
+    }
+}
+
+//media queries 
+@media(max-width: 825px) {
+    .mainMenu {
+        &__list {
+            flex-direction: column;
+            height: auto;
+        }
+
+        &__listItem {
+            height: 55rem;
+
+            .menuLink {
+                height: 60%;
+                width: 95%;
+                padding: 2rem;
+            }
+
+            .container {
+                h3 {
+                    margin-top: 15rem;
+                }
+            }
+        }
+
+        &__reservations h3 {
+            font-size: 1.9rem;
+        }
     }
 }

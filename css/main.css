@@ -144,11 +144,13 @@ html, body {
   font-family: "Playfair Display", serif;
   font-size: 5rem;
   width: 60rem;
+  max-width: 90%;
   text-align: center;
   margin: 0;
 }
 .mainAbout p {
   width: 60rem;
+  max-width: 90%;
   text-align: center;
   line-height: 3rem;
   font-size: 1.6rem;
@@ -161,6 +163,11 @@ html, body {
   font-weight: lighter;
 }
 
+@media (max-width: 600px) {
+  .mainAbout h1 {
+    font-size: 4rem;
+  }
+}
 .mainMenu__list {
   list-style: none;
   padding: 0;
@@ -274,16 +281,38 @@ html, body {
     border: 0.1rem solid #fff;
   }
 }
+@media (max-width: 825px) {
+  .mainMenu__list {
+    flex-direction: column;
+    height: auto;
+  }
+  .mainMenu__listItem {
+    height: 55rem;
+  }
+  .mainMenu__listItem .menuLink {
+    height: 60%;
+    width: 95%;
+    padding: 2rem;
+  }
+  .mainMenu__listItem .container h3 {
+    margin-top: 15rem;
+  }
+  .mainMenu__reservations h3 {
+    font-size: 1.9rem;
+  }
+}
 .mainInfo {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .mainInfo__list {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   width: 110rem;
+  max-width: 90%;
   margin: 15rem 0 5rem;
 }
 .mainInfo .hours {
@@ -365,6 +394,36 @@ html, body {
   background-color: #ccad8f;
 }
 
+@media (max-width: 1060px) {
+  .mainInfo__list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .mainInfo .hours, .mainInfo .questions, .mainInfo .dailyMenu, .mainInfo .tripAdvisor {
+    width: 35%;
+    margin: 3.3rem 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 775px) {
+  .mainInfo .hours, .mainInfo .questions, .mainInfo .dailyMenu, .mainInfo .tripAdvisor {
+    width: 45rem;
+    max-width: 90%;
+    margin: 3.3rem 0;
+  }
+  .mainInfo .hours {
+    margin-top: 0;
+  }
+  .mainInfo .dailyMenu {
+    width: auto;
+  }
+  .mainInfo .dailyMenu__list {
+    width: 60rem;
+    max-width: 90%;
+  }
+}
 .mainSocial {
   display: flex;
   flex-direction: column;
@@ -387,6 +446,7 @@ html, body {
 .mainSocial__list {
   padding: 0;
   width: 90rem;
+  max-width: 90%;
   margin: 8.8rem 0 15rem;
   list-style: none;
   display: flex;
@@ -415,6 +475,18 @@ html, body {
   margin: 0;
 }
 
+@media (max-width: 695px) {
+  .mainSocial__list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .mainSocial__listItem {
+    margin: 0 0 6.6rem 0;
+  }
+  .mainSocial__listItem:last-child {
+    margin-bottom: 2rem;
+  }
+}
 .menusHeader {
   height: 45rem;
 }

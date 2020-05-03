@@ -22,6 +22,7 @@
     &__list {
         padding: 0;
         width: 90rem;
+        max-width: 90%;
         margin: 8.8rem 0 15rem;
         list-style: none;
         display: flex;
@@ -51,6 +52,24 @@
             font-size: 1.1rem;
             font-weight: 400;
             margin: 0;
+        }
+    }
+}
+
+//media queries 
+@media(max-width: 695px) {
+    .mainSocial {
+        &__list {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__listItem {
+            margin: 0 0 6.6rem 0;
+        }
+
+        &__listItem:last-child {
+            margin-bottom: 2rem;
         }
     }
 }
