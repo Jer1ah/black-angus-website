@@ -1,5 +1,6 @@
 .blogList {
     width: 110rem;
+    max-width: 90%;
     margin: 10rem auto 3rem;
 }
 
@@ -59,5 +60,31 @@
             font-weight: 700;
             margin-top: 2rem;
         }
+    }
+}
+
+//media queries 
+@media(max-width: 925px) {
+    .blog {
+        align-items: center;
+        margin-bottom: 7rem;
+
+        &__heading {
+            span {
+                display: none;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
+        &__info {
+            width: 100%;
+        }
+    }
+
+    .blogList {
+        margin-bottom: 10rem;
     }
 }
