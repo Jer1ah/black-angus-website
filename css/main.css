@@ -673,6 +673,7 @@ html, body {
 }
 .reservationsInfo p {
   width: 55rem;
+  max-width: 90%;
   text-align: center;
   line-height: 3rem;
   font-size: 1.6rem;
@@ -693,9 +694,12 @@ html, body {
 .reservations__images h3 {
   font-size: 2rem;
   margin-bottom: 3rem;
+  max-width: 90%;
+  text-align: center;
 }
 .reservations__imagesList {
   width: 110rem;
+  max-width: 90%;
   margin: 0 0 10rem;
   display: flex;
   flex-wrap: wrap;
@@ -705,7 +709,6 @@ html, body {
 }
 .reservations__imagesListItem {
   width: 33%;
-  height: 33rem;
   margin-bottom: 0.5rem;
 }
 .reservations__imagesListItem img {
@@ -713,8 +716,19 @@ html, body {
   height: 100%;
 }
 
+@media (max-width: 1000px) {
+  .reservations__imagesListItem {
+    width: 49.5%;
+  }
+}
+@media (max-width: 795px) {
+  .reservations__imagesListItem {
+    width: 100%;
+  }
+}
 .reservationsRooms {
   width: 110rem;
+  max-width: 90%;
   margin: 0 auto 10rem;
   display: flex;
   align-items: flex-start;
@@ -739,6 +753,16 @@ html, body {
   line-height: 3rem;
 }
 
+@media (max-width: 825px) {
+  .reservationsRooms {
+    flex-direction: column;
+  }
+
+  .reservationsRoom {
+    width: 100%;
+    margin: 0 0 5rem 0;
+  }
+}
 .blogList {
   width: 110rem;
   margin: 10rem auto 3rem;
