@@ -31,3 +31,9 @@
         font-weight: lighter;
     }
 }
+
+@media(max-width: 925px) {
+    .menuInfo h3 {
+        margin-bottom: 5rem;
+    }
+}

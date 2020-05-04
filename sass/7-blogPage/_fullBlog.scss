@@ -3,6 +3,7 @@
     margin: 7rem auto 5rem;
     display: flex;
     flex-direction: column;
+    max-width: 90%;
 
     h1 {
         margin: 0 0 1.5rem;
@@ -29,6 +30,15 @@
         img {
             width: 1.5rem;
             margin-right: .3rem;
+        }
+    }
+}
+
+//media queries 
+@media(max-width: 895px) {
+    .fullBlog {
+        h1 {
+            font-size: 3.3rem;
         }
     }
 }

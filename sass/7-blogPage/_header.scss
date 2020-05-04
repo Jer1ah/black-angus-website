@@ -40,3 +40,15 @@
     background-size: cover;
     background-position: center;
 }
+
+@media(max-width: 795px) {
+    .fullBlogHeader {
+        h1 {
+            font-size: 4.8rem;
+        }
+
+        .header__heading {
+            margin-top: 20rem;
+        }
+    }
+}
