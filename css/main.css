@@ -893,6 +893,7 @@ html, body {
 }
 .locations__list {
   width: 110rem;
+  max-width: 90%;
   margin: 0 auto 20rem;
   display: flex;
   justify-content: space-between;
@@ -914,6 +915,18 @@ html, body {
   margin: 1rem 0;
 }
 
+@media (max-width: 795px) {
+  .locations__list {
+    flex-direction: column;
+  }
+  .locations__listItem {
+    width: 100%;
+    margin-bottom: 7rem;
+  }
+  .locations__listItem:last-child {
+    margin-bottom: 0;
+  }
+}
 .fullBlogHeader {
   height: 45rem;
   display: flex;
