@@ -937,7 +937,7 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../img/blog-image1.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/blog-image1.png");
   background-size: cover;
   background-position: center;
 }
@@ -964,7 +964,7 @@ html, body {
 }
 
 .blog2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../img/blog-image2.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/blog-image2.png");
   background-size: cover;
   background-position: center;
 }
